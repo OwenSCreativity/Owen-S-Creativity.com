@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FAV</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+     <link rel="manifest" href="site.webmanifest">
+     <link rel="icon" href="icon.png">
+     <meta http-equiv="refresh" content="35;url=please.html">
+
+     <style>
+
+
+.glow {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+ .glow3 {
+  font-size: 70px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow3 1s ease-in-out infinite alternate;
+  -moz-animation: glow3 1s ease-in-out infinite alternate;
+  animation: glow3 1s ease-in-out infinite alternate;
+  
+}
+.glow2 {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow2 1s ease-in-out infinite alternate;
+  -moz-animation: glow2 1s ease-in-out infinite alternate;
+  animation: glow2 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgb(247, 0, 255), 0 0 40px rgb(247, 0, 255), 0 0 50px rgb(247, 0, 255), 0 0 60px rgb(247, 0, 255), 0 0 70px rgb(247, 0, 255);
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+  }
+  
+}
+@-webkit-keyframes glow3 {
+  from {
+    text-shadow: 0 0 10px  rgba(255, 0, 242, 0.842), 0 0 20px  rgba(255, 0, 242, 0.842), 0 0 30px rgb(247, 0, 255), 0 0 40px rgb(247, 0, 255), 0 0 50px rgb(247, 0, 255), 0 0 60px rgb(247, 0, 255), 0 0 70px rgb(247, 0, 255);
+  }
+  
+  to {
+    text-shadow: 0 0 20px red, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+  }
+  
+}
+@-webkit-keyframes glow2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.753), 0 0 40px rgba(255, 0, 0, 0.753), 0 0 50px rgba(255, 0, 0, 0.753), 0 0 60px rgba(255, 0, 0, 0.753), 0 0 70px rgba(255, 0, 0, 0.753);
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red, 0 0 80px red;
+  }
+}
+          body{
+               background-image: linear-gradient(rgba(4, 9, 30, 0.322),rgba(4, 9, 30, 0.466)),url('love.jpg');
+               background-repeat: no-repeat;
+               background-attachment: fixed;  
+               background-size: 100% 100vh;
+
+          }
+
+
+          .overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay .a1 {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #f0dede;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .a1:hover, .overlay .a1:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay .a1 {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+     </style>
+</head>
+<body  onload="typeWriter()">
+     <h1 style="font-size:30px;cursor:pointer;text-align: center;" onclick="openNav()"> <span class="glow3" style="text-align: center;">PLEASE AM SO SO SO SORRY</span></h1>
+     <p id="demo" style="font-weight: bolder; color: #fff;"></p>
+     <script>
+     var i =  0;
+     var txt = 'Please Am Really sorry For All I Have Done Please Forgive Me I Beg Of You. Please Say Yes Am Going To ASk You Again Please';
+     var speed = 50;
+     
+     function typeWriter() {
+       if (i < txt.length) {
+         document.getElementById("demo").innerHTML += txt.charAt(i);
+         i++;
+         setTimeout(typeWriter, speed);
+       }
+     }
+     </script>
+     <h1 style="font-size:30px;cursor:pointer;text-align: center;" onclick="openNav()"> <span class="glow3" style="text-align: center;">PLEASE BE MA BAE</span></h1>
+
+</body>
+</html>

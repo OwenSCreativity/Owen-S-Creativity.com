@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>FAV</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="icon.png">
+     <link rel="manifest" href="site.webmanifest">
+     <link rel="icon" href="icon.png">
+<style>
+body {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+#myProgress {
+  width: 50%;
+  background-color: #ddd;
+  max-width: 500px;
+  margin: auto;
+}
+
+#myBar {
+     
+  width: 1%;
+  height: 30px;
+  background-color: red;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+.span1 {
+  
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove1 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove1 5s infinite;
+}
+.span2 {
+  
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove2 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove2 5s infinite;
+}
+
+.span3 {
+
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove3 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove3 5s infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: EASE;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease ;}
+#div4 {animation-timing-function: ease ;}
+#div5 {animation-timing-function: ease ;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove1 {
+  from {top: 0px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove1 {
+  from {top: 0px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+@-webkit-keyframes mymove2 {
+ from {top: 50px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 400px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove2 {
+  from {top: 50px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 400px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+@-webkit-keyframes mymove3 {
+ from {top: 100px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove3 {
+  from {top: 100px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {top: 500px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+
+
+
+
+.span11 {
+  
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove11 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove11 5s infinite;
+}
+.span21 {
+  
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove21 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove21 5s infinite;
+}
+
+.span31 {
+
+  font-weight: bold;
+  position: relative;
+  -webkit-animation: mymove31 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove31 5s infinite;
+}
+
+
+/* Safari 4.0 - 8.0 */
+#div1 {-webkit-animation-timing-function: linear;}
+#div2 {-webkit-animation-timing-function: ease;}
+#div3 {-webkit-animation-timing-function: ease-in;}
+#div4 {-webkit-animation-timing-function: ease-out;}
+#div5 {-webkit-animation-timing-function: ease-in-out;}
+
+/* Standard syntax */
+#div1 {animation-timing-function: EASE;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease ;}
+#div4 {animation-timing-function: ease ;}
+#div5 {animation-timing-function: ease ;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove11 {
+  from {bottom: 0px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove11 {
+  from {bottom: 0px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+@-webkit-keyframes mymove21 {
+ from {bottom: 50px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 400px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove21 {
+  from {bottom: 50px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 400px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+@-webkit-keyframes mymove31 {
+ from {bottom: 100px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 300px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+/* Standard syntax */
+@keyframes mymove31 {
+  from {bottom: 100px; text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+  }
+  to {bottom: 500px; text-shadow: 0 0 20px #fff, 0 0 30px rgba(255, 0, 0, 0.795), 0 0 40px rgba(255, 0, 0, 0.795), 0 0 50px rgba(255, 0, 0, 0.795), 0 0 60px rgba(255, 0, 0, 0.795), 0 0 70px rgba(255, 0, 0, 0.795), 0 0 80px rgba(255, 0, 0, 0.795);
+  }
+}
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div2" class="glow span2">&#9829;</span>
+     <span id="div3" class="glow span3">&#9829;</span>
+      
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div2" class="glow span2">&#9829;</span>
+     <span id="div3" class="glow span3">&#9829;</span>
+     
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div1" class="glow span2">&#9829;</span>
+     <span id="div1" class="glow span3">&#9829;</span>
+      
+ 
+
+
+ 
+<nav style="margin-top: 10px;">
+     <h1 style="text-align: center;font-size: 30px;font-weight: bolder;">
+
+       FAV <span style="color: red;font-size: 50px;">&#9829;</span>
+     
+     </h1>
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div2" class="glow span2">&#9829;</span>
+     <span id="div3" class="glow span3">&#9829;</span>
+    
+
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div2" class="glow span2">&#9829;</span>
+     <span id="div3" class="glow span3">&#9829;</span>
+     
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div1" class="glow span2">&#9829;</span>
+     <span id="div1" class="glow span3">&#9829;</span>
+      
+
+  
+      
+
+      
+     <div id="myProgress">
+          <div id="myBar">1%</div>
+        </div>
+        
+        <br>
+        <a style="padding: 0px; max-width: 500px;text-align: center;
+        margin: auto;" onclick="move()"><h1 style="text-align: center;font-size: 30px;font-weight: bolder;">
+        <span style="color: red;font-size: 30px;">  <i style="font-size: 100px;color: red;"  class="fa">&#xf004;</i></span></h1></a> 
+        <br>
+        
+         
+        <span id="div1" class="glow span1">&#9829;</span>
+        <span id="div1" class="glow span2">&#9829;</span>
+        <span id="div1" class="glow span3">&#9829;</span>
+        
+   
+        <span id="div1" class="glow span1">&#9829;</span>
+        <span id="div1" class="glow span2">&#9829;</span>
+        <span id="div1" class="glow span3">&#9829;</span>
+         
+        <span id="div1" class="glow span1">&#9829;</span>
+        <span id="div1" class="glow span2">&#9829;</span>
+        <span id="div1" class="glow span3">&#9829;</span>
+         
+        
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div2" class="glow span21">&#9829;</span>
+     <span id="div3" class="glow span31">&#9829;</span>
+     
+
+     
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+    
+
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+     
+     
+     
+        <h3 style="text-align: center;">
+          Please Click MA HRT To Continue
+        </h3>
+        <script>
+        var i = 0;
+        function move() {
+          if (i == 0) {
+            i = 1;
+            var elem = document.getElementById("myBar");
+            var width = 10;
+            var id = setInterval(frame, 10);
+            function frame() {
+              if (width >= 100) {
+                clearInterval(id);
+                i = 0;
+              } else {
+                width++;
+                elem.style.width = width + "%";
+                elem.innerHTML = width  + "%";
+                location.replace("love.html")
+              }
+            }
+          }
+        }
+        </script>
+        
+     <span id="div1" class="glow span1">&#9829;</span>
+     <span id="div2" class="glow span2">&#9829;</span>
+     <span id="div3" class="glow span3">&#9829;</span>
+     <span id="div4" class="glow span1">&#9829;</span>
+     <span id="div5" class="glow span2">&#9829;</span>
+     <span id="div5" class="glow span3">&#9829;</span>
+
+     
+  
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+     <span id="div1" class="glow span11">&#9829;</span>
+     <span id="div1" class="glow span21">&#9829;</span>
+     <span id="div1" class="glow span31">&#9829;</span>
+</nav>
+</body>
+
+<!-- Mirrored from www.w3schools.com/howto/tryit.asp?filename=tryhow_css_glowing_text by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Jan 2020 02:38:50 GMT -->
+</html> 
